@@ -145,11 +145,8 @@ This stage of the project lays a strong foundation for understanding the dataset
 
 
 ### Next Steps
-- Perform exploratory data analysis (EDA) to:
-  - Analyze trends in sound features over decades.
-  - Examine the popularity of top genres and artists.
-  - Visualize the dataset using tools like word clouds.
 - Begin clustering to group similar songs and genres.
+- use the Spotify dataset and implement a recommendation system using song features.
 
 ### Dependencies
 Ensure the following Python libraries are installed:
