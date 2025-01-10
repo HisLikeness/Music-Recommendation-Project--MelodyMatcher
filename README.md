@@ -141,11 +141,26 @@ The primary objective of this stage is to uncover trends in sound features, exam
 - **Text Analysis:** WordCloud
 - **Data Handling:** Pandas, NumPy
 
-This stage of the project lays a strong foundation for understanding the dataset and prepares for the clustering and recommendation system implementation in the subsequent phases.
+This project stage lays a strong foundation for understanding the dataset and prepares for the clustering and recommendation system implementation in the subsequent phases.
 
+### Step 3: Clustering (Focus)
+The core of the project lies in grouping similar songs based on audio features. Key highlights include:
+
+#### 1. Feature Selection:
+- Choosing relevant features for clustering: tempo, energy, danceability, valence, instrumentalness, etc.
+- Normalizing features to ensure uniformity in clustering.
+
+#### 2. Modeling:
+- Applying K-Means clustering to partition genre and songs into distinct groups.
+- Optimizing the number of clusters using techniques like the elbow method.
+
+#### 3. Cluster Visualization:
+- Visualizing clusters in 2D or 3D feature space to understand song groupings.
+-  Identifying genre and artist concentration within clusters.
 
 ### Next Steps
-- Begin clustering to group similar songs and genres.
+- Cluster Analysis
+- Cluster-Based Recommendation
 - use the Spotify dataset and implement a recommendation system using song features.
 
 ### Dependencies
@@ -156,6 +171,8 @@ Ensure the following Python libraries are installed:
 - Seaborn
 - WordCloud
 - Plotly
+- scikit-learn
+- spotipy
 
 
 ## How to Run
