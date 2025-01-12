@@ -173,9 +173,50 @@ However, after tackling the challenges and python code produced the desired scat
 - Insights into dominant genres and trends within clusters.
 
 
-## Next Steps
-- Cluster-Based Recommendation
-- use the Spotify dataset and implement a recommendation system using song features.
+### Step 4: Recommendation System Phase
+This project implements a music recommendation system using natural language processing (NLP) and collaborative filtering techniques. The system takes in a list of songs and returns a list of recommended songs based on their audio features and user preferences.
+
+#### Features
+- Song Embeddings: The system uses song embeddings to represent songs as vectors in a high-dimensional space. These embeddings are trained using a combination of audio features and user ratings.
+- Collaborative Filtering: The system uses collaborative filtering to identify patterns in user behavior and recommend songs that are likely to be of interest to a particular user.
+- Natural Language Processing: The system uses NLP techniques to analyze song lyrics and metadata, and to identify songs that are similar in terms of theme, mood, and style.
+
+#### Requirements
+- Python 3.8+: The system is implemented in Python 3.8+ and requires a working Python installation to run.
+- Spotify API Credentials: The system requires a set of Spotify API credentials to access song metadata and audio features. These credentials can be obtained by creating a Spotify Developer account and registering an application.
+
+#### Installation
+1. Clone the repository using git: git clone https://github.com/your-username/recommendation-system.git
+2. Install the required libraries using pip: pip install -r requirements.txt
+3. Set up your Spotify API credentials by creating a credentials.json file in the root directory of the project. This file should contain your client ID and client secret in the following format:
+```
+```
+{
+"client_id": "your-client-id",
+"client_secret": "your-client-secret"
+}
+
+4.  Run the system using Python: `python recommendation_system.py`
+
+## Usage
+-----
+
+1.  Create a list of songs that you want to use as input for the recommendation system. This list should be in the following format:  
+[
+{"name": "Song 1", "artist": "Artist 1"},
+{"name": "Song 2", "artist": "Artist 2"},
+...
+]
+
+2. Pass this list to the `recommend_songs` function to get a list of recommended songs. This function takes in two arguments: the list of input songs and the number of recommended songs to return.
+3. The `recommend_songs` function returns a list of recommended songs in the following format
+[
+{"name": "Recommended Song 1", "artist": "Recommended Artist 1"},
+{"name": "Recommended Song 2", "artist": "Recommended Artist 2"},
+...
+]
+
+4.  You can then use this list of recommended songs as you see fit. For example, you could use it to create a playlist or to recommend songs to a user.
 
 ## Dependencies
 Ensure the following Python libraries are installed:
